@@ -23,8 +23,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/kelso540/news-homepage](https://github.com/kelso540/news-homepage)
+- Live Site URL: [https://luminous-lolly-1e24a8.netlify.app/](https://luminous-lolly-1e24a8.netlify.app/)
 
 ### Built with
 

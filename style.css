@@ -1,0 +1,302 @@
+@font-face {
+    font-family: Inter-VariableFont;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: Inter-Bold;
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: Inter-ExtraBold;
+    src: url(assets/fonts/static/Inter-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Inter-Regular;
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 10% 0 10%;
+}
+.threeLines{
+    display: none;
+}
+.displayNone{
+    opacity: 0;
+    position: fixed;
+    right: -40px;
+    top: -40px; 
+    height: 0;
+    width: 0;
+    transition: all 1s;
+}
+.displayNoneB{
+    opacity: 0;
+    position: absolute;
+    height: 0;
+    width: 0;
+    transition: all 1s;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-areas: 
+    'F F D'
+    'A B D'
+    'E E E';
+    margin: 2% 10% 0 10%;
+}
+.item1{
+    grid-area: A;
+    font-size: 27px;
+    font-family: Inter-ExtraBold;
+}
+.header{
+    position: relative;
+    bottom: 15px;
+    line-height: 1em;
+}
+.header2{
+    display: none;
+}
+.item2{
+    grid-area: B;
+    margin: 0 7% 0 7%;
+}
+.item2 > p{
+    font-family: Inter-Regular;
+    font-size: 15px;
+    color: hsl(236, 13%, 42%);
+    position: relative;
+    top: 15px;
+    width: 105%;
+}
+.item4{
+    grid-area: D;
+    font-family: Inter-Regular;
+    padding: 0 25px 0 25px;
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    height: 90%;
+    margin: 0 0 0 8%;
+}
+.item4 > h2{
+    font-size: 40px;
+    font-family: Inter-Bold;
+    color: hsl(35, 77%, 62%);
+}
+.item4 > div > h2{
+    font-size: 20px;
+}
+.item4 > div > span{
+    font-size: 15px;
+    color: hsl(233, 8%, 79%);
+}
+.borderBottom{
+    border-bottom: solid 2px hsl(236, 13%, 42%);
+    padding-bottom: 35px;
+}
+.item5{
+    display: flex;
+    grid-area: E;
+}
+.item6{
+    grid-area: F;
+}
+.item7{
+    display: none;
+}
+.image{
+    width: 100%;
+}
+.navLinksDiv{
+    display: flex;
+    gap: 20px;
+}
+.link{
+    font-family: Inter-VariableFont;
+    color: hsl(236, 13%, 42%);
+}
+.link:hover{
+    color: hsl(35, 77%, 62%);
+}
+.h2Hover:hover{
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+.readMoreBtn{
+    background-color: hsl(5, 85%, 63%);
+    padding: 15px 30px;
+    font-size: 14px;
+    color: hsl(36, 100%, 99%);
+    font-family: Inter-Regular;
+    letter-spacing: 5px;
+    position: relative;
+    top: 50px;
+}
+.readMoreBtn:hover{
+    background-color: hsl(240, 100%, 5%);
+}
+.flex{
+    display: flex;
+    width: 100%;
+}
+.flexCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 31px 0 15px;
+}
+.number{
+    color: hsl(233, 8%, 79%);
+    font-size: 35px;
+    font-family: Inter-Bold;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.footerImage{
+    width: 110px;
+    height: 90%;
+}
+.footerText{
+    margin-block-start: 10px;
+    margin-block-end: 0;
+    font-size: 18px;
+    font-family: Inter-ExtraBold;
+}
+.footerText:hover{
+    color:  hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+.footerP{
+    font-size: 15px;
+    font-family: Inter-Regular;
+    line-height: 25px;
+    color: hsl(236, 13%, 42%);
+}
+footer{
+    margin-top: 40px;
+}
+@media screen and (max-width: 1390px) {
+    nav{
+        margin: 30px 10px;
+    }
+    .threeLines{
+        display: block;
+    }
+    main{
+        grid-template-columns: auto;
+        grid-template-areas: 
+        'F'
+        'A'
+        'B'
+        'D'
+        'E';
+        margin: 15px;
+    }
+    .navLinksDiv{
+        display: none;
+    }
+    .image{
+        width: 100%;
+    }
+    .item1{
+        font-size: 22px;
+    }
+    .item2{
+        margin: 0;
+        height: 200px;
+        padding-bottom: 30px;
+        position: relative;
+        bottom: 20px;
+    }
+    .item2 > p{
+        top: 0;
+        width: 100%;
+    }
+    .item4{
+        padding: 0 18px 0 18px;
+        height: 500px;
+        margin: 0;
+        position: relative;
+        bottom: 20px;
+    }
+    .item5{
+        flex-direction: column;
+        margin: 40px 0 0 0;
+    }
+    .item6{
+        display: none;
+    }
+    .item7{
+        display: flex;
+    }
+    .header{
+        display: none;
+    }
+    .header2{
+        display: block;
+        line-height: 1em;
+    }
+    .readMoreBtn{
+        top: 30px;
+    }
+    .flex{
+        height: 160px;
+        margin: 0 0 20px 0;
+    }
+    .flexCol{
+        margin: 0 0 0 10px;
+    }
+    .link{
+        color: hsl(236, 13%, 42%);
+    }
+    .navLinksDivMobile{
+        display: flex;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 67%;
+        height: 100%;
+        contain: content;
+        background-color: hsl(36, 100%, 99%);
+        z-index: 2;
+        transition: all 1s;
+    }
+    .x{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .mobileLinks{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 20px;
+        top: 25vh;
+        font-size: 20px;
+        gap: 20px;
+    }
+    .backdropFilter{
+        position: fixed;
+        top: 0; 
+        right: 0;
+        bottom: 0; 
+        left: 0; 
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        transition: all 1s;
+    }
+}

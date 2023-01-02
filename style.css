@@ -21,6 +21,9 @@
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+body{
+    background-color:  hsl(36, 100%, 99%);
+}
 a{
     text-decoration: none;
 }
@@ -28,7 +31,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2% 10% 0 10%;
+    margin: 10% 10% 0 10%;
 }
 .threeLines{
     display: none;
@@ -56,7 +59,7 @@ main{
     'F F D'
     'A B D'
     'E E E';
-    margin: 2% 10% 0 10%;
+    margin: 4% 10% 0 10%;
 }
 .item1{
     grid-area: A;

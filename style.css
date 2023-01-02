@@ -31,7 +31,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10% 10% 0 10%;
+    margin: 7% 10% 0 10%;
 }
 .threeLines{
     display: none;
